@@ -1,0 +1,181 @@
+/* --------------- LOGIN --------------------------*/
+img {
+    width: 100%;
+}
+
+#login .logo {
+    background-image: url(pictures/tilmelding.jpg);
+    width: 60%;
+    max-width: 50vw;
+}
+
+
+
+#login .top_column {
+    background-color: #EA5045;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+
+
+}
+
+#login {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Full-width inputs */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+/* Set a style for all buttons */
+#login button {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0 auto;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    max-width: 50vw;
+    align-content: center;
+
+
+}
+
+/* Add a hover effect for buttons */
+#login button:hover {
+    opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+#login .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+#login .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+#login img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+#login .container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+#login span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    #login span.psw {
+        display: block;
+        float: none;
+    }
+
+    #login .cancelbtn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* --------------- HEADER / BURGER MENU ---------------- */
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+    margin: -8px 0px 0 0;
+    padding-left: 1.25em;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 50px;
+    text-align: right;
+    float: right;
+
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+    margin: 0 20px 0 0;
+    padding-left: 1.25em;
+    cursor: pointer;
+    position: relative;
+    width: 30px;
+    height: 50px;
+    text-align: right;
+    float: right;
+    background-color: #3F3140;
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: #F58E81;
+}
+
+#menu header {
+    background-color: #f44336;
+    padding: 25px;
+}
+
+/*
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}*/
+
+
+/* ----------------- FORISDE ------------------*/

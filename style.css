@@ -3,6 +3,10 @@ img {
     width: 100%;
 }
 
+#login body {
+    background-color: #FAF7F7;
+}
+
 #login .logo {
     background-image: url(pictures/tilmelding.jpg);
     width: 60%;
@@ -37,7 +41,18 @@ input[type=password] {
     border: 1px solid #ccc;
     box-sizing: border-box;
     border-radius: 10px;
+    max-width: 50vw;
 
+}
+
+#login .knapper {
+    text-align: center;
+}
+
+#login .tekstbokse {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
 }
 
 /* Set a style for all buttons */
@@ -147,6 +162,7 @@ nav {
     text-align: right;
     float: right;
     background-color: #3F3140;
+    background-size: cover;
 
 }
 

@@ -4,26 +4,39 @@ img {
 }
 
 #login body {
-    background-color: #FAF7F7;
+
+    background-color: #faf7f7;
+
+    width: 360px;
 }
+
 
 #login .logo {
-    background-image: url(pictures/tilmelding.jpg);
-    width: 60%;
-    max-width: 50vw;
-}
 
+    display: flex;
+
+}
 
 
 #login .top_column {
-    background-color: #EA5045;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
 
+    background-color: #EA5045;
+    width: 360px;
+    height: 180px;
+
+}
+
+#login .login_logo {
+    background-image: url(pictures/Group%201604.svg);
+    width: 45vw;
+    height: 11vw;
+    background-size: cover;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(56%, 160%)
+}
 
 }
 
@@ -96,9 +109,7 @@ input[type=password] {
 }
 
 /* Add padding to containers */
-#login .container {
-    padding: 16px;
-}
+#login .container {}
 
 /* The "Forgot password" text */
 #login span.psw {
@@ -268,11 +279,13 @@ nav {
 
     background-color: #faf7f7;
 
-    width: 360px
+    width: 360px;
 }
 
 .toprow {
     display: flex;
+    width: 360px;
+
 
 }
 
@@ -302,6 +315,7 @@ nav {
 
 .midrow {
     display: flex;
+    flex-wrap: wrap;
 
 }
 
@@ -371,13 +385,14 @@ nav {
 }
 
 .collom {
+    display: flex;
     flex-direction: column;
 
 }
 
 .aktuelt {
     width: 230px;
-    height: 225px;
+    height: 230px;
     background-image: url(svg/aktuelt.svg);
     flex-wrap: wrap;
 }

@@ -9,20 +9,72 @@
 
 <body>
     <header>
-        <nav>
-            <div id="menuknap">☰</div>
-            <ul id="menu" class="hidden">
-                <img src="pictures/kea.png" alt="kea">
-                <li><a href="index.html">Forside</a></li>
-                <li> <a href="skema.html">Skema</a></li>
-                <li> <a href="afleveringer.html">Afleveringer</a></li>
-                <li> <a href="materialer.html">Materialer</a></li>
-                <li> <a href="chat.html">Chat</a></li>
-                <li> <a href="indstillinger.html">Indstillinger</a></li>
-            </ul>
 
+
+        <div class="logo">
+        </div>
+
+        <nav>
+            <!-- The overlay -->
+            <div id="myNav" class="overlay">
+
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <img src="pictures/Group%201604.svg" alt="kealogo">
+                    <a href="index.html">Forside</a>
+                    <a href="aktuelt.html">Aktuelt</a>
+                    <a href="skema.html">Skema</a>
+                    <a href="afleveringer.html">Afleveringer</a>
+                    <a href="materialer.html">Materialer</a>
+                    <a href="chat.html">Chat</a>
+                    <a href="indstillinger.html">Indstilliger</a>
+                    <a href="logud.html">Log ud</a>
+                </div>
+
+            </div>
+            <div class="burger" alt="burgermenu">
+                <!-- Use any element to open/show the overlay navigation menu -->
+                <span onclick="openNav()"><img src="pictures/Menu.svg" alt="menu"></span>
+            </div>
         </nav>
     </header>
+
+    <div class="container">
+        <div class="toprow">
+            <div class="matrialer menubox"></div>
+            <div class="skema menubox"></div>
+            <div class="notifikationer menubox"></div>
+
+        </div>
+        <div class="midrow">
+            <div class="techlounge menubox"></div>
+            <div class="mail menubox"></div>
+
+        </div>
+        <div class="mid1row">
+            <div class="favoritter menubox"></div>
+            <div class="grupper menubox"></div>
+            <div class="chat menubox"></div>
+        </div>
+
+        <div class="bottomrow">
+            <div class="collom">
+                <div class="sog menubox"></div>
+                <div class="afleveringer menubox"></div>
+            </div>
+            <div class="aktuelt menubox"></div>
+
+        </div>
+        <div class="bottom1row">
+            <div class="xxx menubox"></div>
+            <div class="xxx menubox"></div>
+            <div class="xxx menubox"></div>
+
+        </div>
+    </div>
 
 
 

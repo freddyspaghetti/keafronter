@@ -122,76 +122,281 @@ input[type=password] {
 
 
 
-/* --------------- HEADER / BURGER MENU ---------------- */
+
+
+
+/* --------- HEADER FOR ALLE SIDER --------------- */
+
+header {
+    width: 100%;
+    height: 10vw;
+    background-color: #EA5045;
+    width: 360px
+}
+
+.logo {
+    background-image: url(pictures/Group%201604.svg);
+    width: 20vw;
+    height: 5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    top: 50%;
+    margin-left: 20px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(50%);
+
+
+}
+
+/*SKEMA*/
+
+.skema {
+    width: 100%;
+    height: 14vw;
+    background-color: gainsboro;
+}
+
+
+
+
+/* -------------------- BURGER MENU ---------------- */
 
 nav {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-.hidden {
-    /*    display: none;*/
-    /*    transform: scale(0);*/
-    transform: translateX(-100%);
-    opacity: 0;
-}
-
-#menuknap {
-    display: inline-block;
-    margin: -8px 0px 0 0;
-    padding-left: 1.25em;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 50px;
-    text-align: right;
-    float: right;
+#myNav img {
+    width: 20vw;
+    margin-bottom: 40px;
 
 }
 
-#menu {
-    list-style-type: none;
-    transition: transform .3s;
-    transform-origin: top left;
-    margin: 0 20px 0 0;
-    padding-left: 1.25em;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 50px;
-    text-align: right;
-    float: right;
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
     background-color: #3F3140;
-    background-size: cover;
-
+    /* Black fallback color */
+    background-color: #3F3140;
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
-#menu a {
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
     text-decoration: none;
+    font-size: 36px;
     color: #F58E81;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
 }
 
-#menu header {
-    background-color: #f44336;
-    padding: 25px;
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: white;
 }
 
-/*
-@media only screen and (min-width: 600px) {
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: -7px;
+    right: 5px;
+    font-size: 50px;
+}
 
-    #menuknap {
-        display: none;
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
     }
 
-    #menu.hidden {
-        transform: translateX(0);
-        opacity: 1;
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
+}
 
-    #menu li {
-        display: inline-block;
-    }
-}*/
+.burger {
+    float: right;
+    margin: 0;
+    top: 50%;
+    margin-right: 4vw;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-35%);
+
+}
+
 
 
 /* ----------------- FORISDE ------------------*/
+
+/*toprow*/
+
+
+
+.container {
+
+    background-color: #faf7f7;
+
+    width: 360px
+}
+
+.toprow {
+    display: flex;
+
+}
+
+.matrialer {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/Group%201610.svg);
+
+
+}
+
+.skema {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/skema.svg);
+
+
+}
+
+.notifikationer {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/noti.svg);
+}
+
+/*midrow*/
+
+.midrow {
+    display: flex;
+
+}
+
+.techlounge {
+    width: 230px;
+    height: 110px;
+    background-image: url(svg/tech.svg);
+
+
+}
+
+.mail {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/mail.svg);
+
+}
+
+/*mid1row*/
+
+.mid1row {
+    display: flex;
+}
+
+.favoritter {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/fav.svg);
+
+
+}
+
+.grupper {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/grupper.svg);
+
+}
+
+.chat {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/chat.svg);
+
+}
+
+/*.Bottomrow*/
+.bottomrow {
+    display: flex;
+    height: 240px;
+}
+
+.sog {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/sog.svg);
+
+
+}
+
+.afleveringer {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/aflevering.svg);
+
+
+}
+
+.collom {
+    flex-direction: column;
+
+}
+
+.aktuelt {
+    width: 230px;
+    height: 225px;
+    background-image: url(svg/aktuelt.svg);
+    flex-wrap: wrap;
+}
+
+.bottom1row {
+    display: flex;
+
+}
+
+.xxx {
+    width: 110px;
+    height: 110px;
+    background-image: url(svg/xxx.svg);
+}
+
+/*alle boxene*/
+.menubox {
+    margin: 5px;
+    /*    pointer-events: none;*/
+
+
+}

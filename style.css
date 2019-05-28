@@ -1,7 +1,50 @@
+/* -------------- FONTS ---------------------
+Gibson Bold
+
+font-family: canada-type-gibson, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Gibson Bold Italic
+
+font-family: canada-type-gibson, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Gibson Italic
+
+font-family: canada-type-gibson, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Gibson Regular
+
+font-family: canada-type-gibson, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+ ----------------------------------------------*/
+
+
+
+
 /* --------------- LOGIN --------------------------*/
 img {
     width: 100%;
 }
+
 
 #login body {
 
@@ -19,7 +62,6 @@ img {
 
 
 #login .top_column {
-
     background-color: #EA5045;
     width: 360px;
     height: 180px;
@@ -38,7 +80,6 @@ img {
     transform: translate(56%, 160%)
 }
 
-}
 
 #login {
     font-family: 'Open Sans', sans-serif;
@@ -140,15 +181,16 @@ input[type=password] {
 
 header {
     width: 100%;
-    height: 10vw;
+    height: 50px;
     background-color: #EA5045;
-    width: 360px
+    width: 360px;
+    margin: 0;
 }
 
 .logo {
     background-image: url(pictures/Group%201604.svg);
-    width: 20vw;
-    height: 5vw;
+    width: 100px;
+    height: 25px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -173,13 +215,10 @@ header {
 
 /* -------------------- BURGER MENU ---------------- */
 
-nav {
-    font-family: 'Open Sans', sans-serif;
-}
-
 #myNav img {
-    width: 20vw;
+    width: 64vw;
     margin-bottom: 40px;
+
 
 }
 
@@ -228,6 +267,12 @@ nav {
     /* Display block instead of inline */
     transition: 0.3s;
     /* Transition effects on hover (color) */
+    font-family: canada-type-gibson, sans-serif;
+
+    font-weight: 400;
+
+    font-style: normal;
+
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -239,16 +284,17 @@ nav {
 /* Position the close button (top right corner) */
 .overlay .closebtn {
     position: absolute;
-    top: -7px;
-    right: 5px;
+    top: 3px;
+    right: 8px;
     font-size: 50px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
     .overlay a {
-        font-size: 20px
+        font-size: 20px;
     }
+
 
     .overlay .closebtn {
         font-size: 40px;
@@ -268,17 +314,30 @@ nav {
 }
 
 
+.logud {
+    position: absolute;
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+    bottom: -232px;
+    text-align: center;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
 
 /* ----------------- FORISDE ------------------*/
 
 /*toprow*/
 
-
+body {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 .container {
 
     background-color: #faf7f7;
-
     width: 360px;
 }
 

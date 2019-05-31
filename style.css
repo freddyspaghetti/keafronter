@@ -1,4 +1,5 @@
 /* -------------- FONTS ---------------------
+Fonts added:
 Gibson Bold
 
 font-family: canada-type-gibson, sans-serif;
@@ -35,6 +36,13 @@ font-weight: 400;
 font-style: normal;
 
 
+Gibson SemiBold
+
+font-family: canada-type-gibson, sans-serif;
+
+font-weight: 600;
+
+font-style: normal;
  ----------------------------------------------*/
 
 
@@ -54,13 +62,6 @@ img {
 }
 
 
-#login .logo {
-
-    display: flex;
-
-}
-
-
 #login .top_column {
     background-color: #EA5045;
     width: 360px;
@@ -70,20 +71,25 @@ img {
 
 #login .login_logo {
     background-image: url(pictures/Group%201604.svg);
-    width: 45vw;
-    height: 11vw;
+    width: 220px;
+    height: 55px;
     background-size: cover;
-    margin: 0;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(56%, 160%)
+    transform: translate(30%, 110%);
+    max-width: 360px;
+
 }
 
 
 #login {
-    font-family: 'Open Sans', sans-serif;
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #faf7f7;
 }
+
+
+
+
 
 /* Full-width inputs */
 input[type=text],
@@ -92,90 +98,71 @@ input[type=password] {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: none;
     box-sizing: border-box;
-    border-radius: 10px;
-    max-width: 50vw;
+    border-radius: 30px;
+    max-width: 300px;
+    height: 50px;
 
 }
 
+
+
 #login .knapper {
     text-align: center;
+    padding-bottom: 30px;
+    justify-content: center;
+
 }
 
 #login .tekstbokse {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+    background-color: #faf7f7;
 }
 
 /* Set a style for all buttons */
-#login button {
+
+#login knapper {
+    text-align: center;
+
+
+}
+
+
+#login .knap1 {
+
     background-color: #f44336;
     color: white;
     padding: 14px 20px;
     margin: 8px 0 auto;
-    border: none;
     cursor: pointer;
-    width: 100%;
-    border-radius: 10px;
-    max-width: 50vw;
-    align-content: center;
+    border-radius: 30px;
+    width: 300px;
+    border: solid;
+    border-color: #f44336;
+    display: inline-block;
+
 
 
 }
 
-/* Add a hover effect for buttons */
-#login button:hover {
-    opacity: 0.8;
+#login .knap2 {
+
+    background-color: white;
+    color: #f44336;
+    padding: 14px 20px;
+    margin: 8px 0 auto;
+    border: solid;
+    border-color: #f44336;
+    cursor: pointer;
+    border-radius: 30px;
+    flex-wrap: nowrap;
+    width: 300px;
+    display: inline-block;
+
 }
-
-/* Extra style for the cancel button (red) */
-#login .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #f44336;
-}
-
-/* Center the avatar image inside this container */
-#login .imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-/* Avatar image */
-#login img.avatar {
-    width: 40%;
-    border-radius: 50%;
-}
-
-/* Add padding to containers */
-#login .container {}
-
-/* The "Forgot password" text */
-#login span.psw {
-    float: right;
-    padding-top: 16px;
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-    #login span.psw {
-        display: block;
-        float: none;
-    }
-
-    #login .cancelbtn {
-        width: 100%;
-    }
-}
-
-
-
-
-
-
-
 
 /* --------- HEADER FOR ALLE SIDER --------------- */
 
@@ -185,6 +172,9 @@ header {
     background-color: #EA5045;
     width: 360px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .logo {
@@ -200,6 +190,20 @@ header {
     transform: translateY(50%);
 
 
+
+}
+
+.profil {
+
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    transform: translateX(500%);
+    position: absolute;
+    left: 40%;
+    top: 2.5%;
 }
 
 /*SKEMA*/
@@ -308,18 +312,19 @@ header {
     margin: 0;
     top: 50%;
     margin-right: 4vw;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-35%);
+    position: absolute;
+    left: 87%;
+    top: 3%;
 
 }
 
 
-.logud {
+#logud {
     position: absolute;
     background-color: #f44336;
-    color: white;
+    color: white !important;
     width: 100%;
-    bottom: -232px;
+    bottom: -177px;
     text-align: center;
     overflow-x: hidden;
     z-index: 0;
@@ -328,60 +333,134 @@ header {
 
 /* ----------------- FORISDE ------------------*/
 
-/*toprow*/
+/* FONTS */
 
-body {
-    margin-left: 5px;
-    margin-right: 5px;
+.text1 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1rem;
+    color: #F58E81;
+
 }
 
-.container {
 
+.text2 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: #F58E81;
+}
+
+
+.text3 {
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3rem;
+    color: #F58E81;
+}
+
+.container a {
+    text-decoration: none;
+}
+
+
+
+/*toprow*/
+
+.icon {
+    height: 42px;
+    width: 42px;
+    display: flex;
+    color: #FFB4AA;
+
+}
+
+
+
+.container {
+    align-items: center;
     background-color: #faf7f7;
     width: 360px;
 }
 
+.menubox {
+    pointer-events: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+
+
+}
+
 .toprow {
     display: flex;
-    width: 360px;
-
+    margin-top: 5px;
 
 }
 
-.matrialer {
+.materialer {
     width: 110px;
     height: 110px;
-    background-image: url(svg/Group%201610.svg);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+
+
+.icon1 {
+    height: 42px;
+    width: 42px;
+    display: flex;
+
 
 
 }
+
+.icon2 {
+    height: 42px;
+    width: 42px;
+
+
+
+}
+
 
 .skema {
     width: 110px;
     height: 110px;
-    background-image: url(svg/skema.svg);
 
 
 }
 
+
+
 .notifikationer {
     width: 110px;
     height: 110px;
-    background-image: url(svg/noti.svg);
 }
 
 /*midrow*/
 
 .midrow {
     display: flex;
-    flex-wrap: wrap;
-
 }
+
 
 .techlounge {
     width: 230px;
     height: 110px;
-    background-image: url(svg/tech.svg);
 
 
 }
@@ -389,7 +468,6 @@ body {
 .mail {
     width: 110px;
     height: 110px;
-    background-image: url(svg/mail.svg);
 
 }
 
@@ -402,7 +480,6 @@ body {
 .favoritter {
     width: 110px;
     height: 110px;
-    background-image: url(svg/fav.svg);
 
 
 }
@@ -410,14 +487,12 @@ body {
 .grupper {
     width: 110px;
     height: 110px;
-    background-image: url(svg/grupper.svg);
 
 }
 
 .chat {
     width: 110px;
     height: 110px;
-    background-image: url(svg/chat.svg);
 
 }
 
@@ -430,7 +505,6 @@ body {
 .sog {
     width: 110px;
     height: 110px;
-    background-image: url(svg/sog.svg);
 
 
 }
@@ -438,21 +512,19 @@ body {
 .afleveringer {
     width: 110px;
     height: 110px;
-    background-image: url(svg/aflevering.svg);
 
 
 }
 
 .collom {
-    display: flex;
     flex-direction: column;
+    display: flex;
 
 }
 
 .aktuelt {
     width: 230px;
     height: 230px;
-    background-image: url(svg/aktuelt.svg);
     flex-wrap: wrap;
 }
 
@@ -464,13 +536,398 @@ body {
 .xxx {
     width: 110px;
     height: 110px;
-    background-image: url(svg/xxx.svg);
 }
 
-/*alle boxene*/
-.menubox {
-    margin: 5px;
-    /*    pointer-events: none;*/
+.xxx img {
+    height: 32px;
+    width: 32px;
+
+}
 
 
+
+/* ------------ Undersider -----------------*/
+
+.construction {
+    margin: 15px;
+    max-width: 330px;
+}
+
+.profil {
+    background-image: url(svg/profile)
+}
+
+/* ------------ skema -----------------*/
+
+.skemamain {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 14vw;
+    background-color: gainsboro;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    padding-bottom: 2px;
+    padding-top: 3px;
+}
+
+.skematop1 {
+    font-size: 1rem;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+/* Month header */
+.maaned {
+    width: 100%;
+    background-color: #3F3140;
+    text-align: center;
+}
+
+/* Month list */
+.maaned ul {
+    margin: 0;
+    padding: 0;
+}
+
+.maaned ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.maaned .prev {
+    float: left;
+    padding: 10px;
+    padding-top: 20px;
+    padding-left: 60px;
+    color: #EA5045;
+
+}
+
+/* Next button */
+.maaned .next {
+    float: right;
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 60px;
+    color: #EA5045;
+}
+
+/*MODULER I SKEMA*/
+
+.skema1 {
+    display: flex;
+}
+
+.tidcontainer {}
+
+.tid1 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: darkgray;
+
+}
+
+.tid2 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: darkgray;
+    width: 37px;
+
+}
+
+.modul1 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 300px;
+    border-style: solid;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.modul1 p {
+    font-size: 0.7em
+}
+
+.img1 {
+    width: 15px;
+    position: absolute;
+    right: 4vw;
+    top: 53vw;
+}
+
+.img2 {
+    width: 15px;
+    position: absolute;
+    right: 4vw;
+    top: 58vw;
+}
+
+
+.skema2 {
+    display: flex;
+}
+
+.tidcontainer2 {}
+
+.tid3 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: darkgray;
+    width: 37px;
+
+}
+
+.tid4 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: darkgray;
+
+}
+
+.modul2 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 300px;
+    border-style: solid;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.modul2 p {
+    font-size: 0.7em
+}
+
+.img3 {
+    width: 15px;
+    position: absolute;
+    right: 4vw;
+    top: 90.5vw;
+}
+
+.skema3 {
+    display: flex;
+}
+
+.tidcontainer3 {}
+
+.tid5 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: darkgray;
+    width: 37.88px;
+
+}
+
+.tid6 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: darkgray;
+    width: 37.88px;
+
+}
+
+.modul3 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 150px;
+    border-style: solid;
+    font-size: 0.8rem;
+    padding: 10px;
+    flex-grow: 1;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.modul3 p {
+    font-size: 0.7em
+}
+
+.img4 {
+    width: 15px;
+    position: absolute;
+    right: 4vw;
+    top: 128.5vw;
+}
+
+.skema4 {
+    display: flex;
+}
+
+.tid7 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: darkgray;
+    width: 37.88px;
+
+}
+
+.tid8 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 100px;
+    border-style: solid;
+    padding: 10px;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    color: darkgray;
+    width: 37.88px;
+
+}
+
+.modul4 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 150px;
+    border-style: solid;
+    font-size: 0.8rem;
+    padding: 10px;
+    flex-grow: 1;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.mat1 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 300px;
+    border-style: none;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.mat1 img {
+    position: absolute;
+    width: 12px;
+    right: 15px;
+    top: 202px;
+}
+
+.mat1 p {
+    font-size: 0.6rem;
+}
+
+.mat2 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 300px;
+    border-style: none;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+}
+
+.mat2 img {
+    position: absolute;
+    width: 12px;
+    right: 15px;
+    top: 256px;
+}
+
+.mat2 p {
+    font-size: 0.6rem;
+}
+
+.mat3 {
+    border: 1px;
+    border-color: #BCC5D3;
+    flex-basis: 300px;
+    border-style: none;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 8px;
+    background-color: whitesmoke;
+    margin-bottom: 350px;
+}
+
+.mat3 img {
+    position: absolute;
+    width: 12px;
+    right: 15px;
+    top: 310px;
+}
+
+.mat3 p {
+    font-size: 0.6rem;
+}
+
+
+.skemafoot {
+    background-color: #3F3140;
+}
+
+.skemafoot2 {
+    display: flex;
+    justify-content: center;
+}
+
+.skemafoot img {
+    width: 20px;
+    padding-right: 8px;
+}
+
+.skemafoot p {
+    font-size: 0.8rem;
+    color: white;
+}
+
+.skematext p {
+    font-family: canada-type-gibson, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.mattext p {
+    font-family: canada-type-gibson, sans-serif;
+    padding: 0;
+    margin: 0;
 }

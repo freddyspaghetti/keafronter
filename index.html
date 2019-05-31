@@ -9,16 +9,24 @@
     <link rel="stylesheet" href="https://use.typekit.net/zdr5vaa.css">
 
 
+
+
 </head>
 
 <body>
     <header>
 
+        <a href="index.html">
+            <div class="logo">
+            </div>
+        </a>
 
-        <div class="logo">
-        </div>
-        <div class="profil">
-        </div>
+        <a href="profil.html">
+            <div class="profil">
+                <img src="svg/profil.svg" alt="profil">
+            </div>
+        </a>
+
         <nav>
             <!-- The overlay -->
             <div id="myNav" class="overlay">
@@ -28,21 +36,23 @@
 
                 <!-- Overlay content -->
                 <div class="overlay-content">
-                    <img src="pictures/Group%201604.svg" alt="kealogo">
-                    <a href="index.html">Forside</a>
-                    <a href="aktuelt.html">Aktuelt</a>
-                    <a href="skema.html">Skema</a>
-                    <a href="afleveringer.html">Afleveringer</a>
-                    <a href="materialer.html">Materialer</a>
-                    <a href="chat.html">Chat</a>
-                    <a href="indstillinger.html">Indstilliger</a>
-                    <div class="logud">
+                    <div class="overlay-liste">
+                        <img src="pictures/Group%201604.svg" alt="kealogo">
+                        <a href="index.html">Forside</a>
+                        <a href="aktuelt.html">Aktuelt</a>
+                        <a href="skema.html">Skema</a>
+                        <a href="afleveringer.html">Afleveringer</a>
+                        <a href="materialer.html">Materialer</a>
+                        <a href="chat.html">Chat</a>
+                        <a href="indstillinger.html">Indstillinger</a>
+                    </div>
+                    <div id="logud" class="logud1">
                         <a href="login.html">Log ud</a>
                     </div>
                 </div>
 
             </div>
-            <div class="burger" alt="burgermenu">
+            <div class="burger">
                 <!-- Use any element to open/show the overlay navigation menu -->
                 <span onclick="openNav()"><img src="pictures/Menu.svg" alt="menu"></span>
             </div>
@@ -50,39 +60,178 @@
     </header>
 
     <div class="container">
+
         <div class="toprow">
-            <div class="matrialer menubox"></div>
-            <div class="skema menubox"></div>
-            <div class="notifikationer menubox"></div>
+
+            <a href="materialer.html">
+                <div class="materialer menubox">
+                    <div class="icon1 icon"><img src="svg/Folder.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Materialer</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="skema.html">
+                <div class="skema menubox">
+                    <div class="icon1 icon"><img src="svg/Calendar.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Skema</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="notifikation.html">
+                <div class="notifikationer menubox">
+                    <div class="icon1 icon"><img src="svg/Alert.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Notifikationer</p>
+                    </div>
+                </div>
+            </a>
+
 
         </div>
+
+
         <div class="midrow">
-            <div class="techlounge menubox"></div>
-            <div class="mail menubox"></div>
+
+
+            <a href="techlounge.html">
+                <div class="techlounge menubox">
+                    <div class="text2">
+                        <p>Techlounge</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="mail.html">
+                <div class="mail menubox">
+                    <div class="icon1 icon"><img src="svg/Messages.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Mail</p>
+                    </div>
+                </div>
+            </a>
+
+
 
         </div>
         <div class="mid1row">
-            <div class="favoritter menubox"></div>
-            <div class="grupper menubox"></div>
-            <div class="chat menubox"></div>
+
+
+            <a href="favoritter.html">
+                <div class="favoritter menubox">
+                    <div class="icon1 icon"><img src="svg/Bookmark.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Favoritter</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="grupper.html">
+                <div class="grupper menubox">
+                    <div class="icon1 icon"><img src="svg/Group%201572.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Grupper</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="chat.html">
+                <div class="chat menubox">
+                    <div class="icon1 icon"><img src="svg/Group.svg" alt=""></div>
+                    <div class="text1">
+                        <p>Chat</p>
+                    </div>
+                </div>
+            </a>
+
+
         </div>
 
         <div class="bottomrow">
             <div class="collom">
-                <div class="sog menubox"></div>
-                <div class="afleveringer menubox"></div>
+
+
+                <a href="soeg.html">
+                    <div class="sog menubox">
+                        <div class="icon1 icon"><img src="svg/Search.svg" alt=""></div>
+                        <div class="text1">
+                            <p>Søg</p>
+                        </div>
+                    </div>
+                </a>
+
+
+
+                <a href="afleveringer.html">
+                    <div class="afleveringer menubox">
+                        <div class="icon1 icon"><img src="svg/Component%205%20%E2%80%93%202.svg" alt=""></div>
+                        <div class="text1">
+                            <p>Afleveringer</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="aktuelt menubox"></div>
+
+
+            <a href="aktuelt.html">
+                <div class="aktuelt menubox">
+                    <div class="text3">
+                        <p>Aktuelt</p>
+                    </div>
+                </div>
+            </a>
+
 
         </div>
         <div class="bottom1row">
-            <div class="xxx menubox"></div>
-            <div class="xxx menubox"></div>
-            <div class="xxx menubox"></div>
+
+
+            <a href="xxx.html">
+                <div class="xxx menubox">
+                    <div class="icon1 icon"><img src="svg/Path%20146.svg" alt=""></div>
+                    <div class="text1">
+                        <p>xxx</p>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="xxx.html">
+                <div class="xxx menubox">
+                    <div class="icon1 icon"><img src="svg/Path%20146.svg" alt=""></div>
+                    <div class="text1">
+                        <p>xxx</p>
+                    </div>
+                </div>
+            </a>
+
+
+
+            <a href="xxx.html">
+                <div class="xxx menubox">
+                    <div class="icon1 icon"><img src="svg/Path%20146.svg" alt=""></div>
+                    <div class="text1">
+                        <p>xxx</p>
+                    </div>
+                </div>
+            </a>
+
 
         </div>
     </div>
-
 
 
 
